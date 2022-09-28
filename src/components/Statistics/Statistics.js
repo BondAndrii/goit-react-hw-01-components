@@ -4,7 +4,7 @@ import { BlockStat } from 'components/BlockStat/BlockStat';
 
 export const Statistics = ({ title, stats}) => { 
     return (<section>
-        {/* {title && <h2>{title}</h2>} */}
+        {title && <h2>{title}</h2>}
         <ul>
         {stats.map(stat => <BlockStat stat={stat} />)}
         </ul >

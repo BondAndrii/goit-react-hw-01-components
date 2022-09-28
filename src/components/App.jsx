@@ -7,7 +7,7 @@ export const App = () => {
   return (
     <div>
       {<Profile profile={user} />}
-      {<Statistics stats={stats} />}
+      {<Statistics title="Upload stats" stats={stats} />}
     </div>
   );
 };
