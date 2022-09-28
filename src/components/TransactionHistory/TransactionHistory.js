@@ -11,7 +11,7 @@ export const TransactionHistory = ({ props }) => {
   </thead>
 
   <tbody>
-   {<TransactionItem/>}
+            {props.map(prop => <TransactionItem props={prop}/>)}
   </tbody>
 </table>);
 }
