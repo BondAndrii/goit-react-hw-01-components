@@ -1,8 +1,8 @@
 import { TransactionItem } from "components/TransactionItem/TransactionItem";
-
+import css from "components/TransactionHistory/TransactionHistory.module.css"
 export const TransactionHistory = ({ props }) => {
-    return (<table>
-  <thead>
+    return (<table className={css.tableAction}>
+  <thead className={css.tableHeader}>
     <tr>
       <th>Type</th>
       <th>Amount</th>
