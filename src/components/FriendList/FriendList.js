@@ -1,7 +1,8 @@
 
 import { FriendListItem } from "components/FriendListItem/FriendListItem";
+import css from 'components/FriendList/FriendList.module.css'
 export const FriendList = ({ friends }) => {
-    return (<ul>
+    return (<ul className={css.list}>
         {friends.map(friend => <FriendListItem props={friend} />)}
 </ul>);
 }

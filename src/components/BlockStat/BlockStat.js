@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types'; 
+import css from 'components/BlockStat/BlockStat.module.css'
+
 
 export const BlockStat = ({ stat: { id, label, percentage } }) => {
-    return <li id={id}>
+    return <li className={css.item} id={id}>
         <span>{label}</span>
         <span>{percentage}</span>
     </li>
