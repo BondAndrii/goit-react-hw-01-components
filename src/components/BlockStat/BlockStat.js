@@ -15,9 +15,10 @@ function getRandomHexColor() {
     return `rgb(${red}, ${green}, ${blue})`
 }
 BlockStat.propTypes = {
-        stat: PropTypes.exact({
+    stat: PropTypes.exact({
         id: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,
         percentage: PropTypes.number.isRequired,
-      })
+    })
 }
+// оролиавымьи
