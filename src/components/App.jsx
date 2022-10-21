@@ -13,9 +13,8 @@ export const App = () => {
     <div>
       {<Profile profile={user} />};
       {<Statistics title="Upload stats" stats={stats} />};      
-      {<FriendList friends={friends} />}
-      {/* {<TransactionItem props={ transactions[0]} />} */}
-      {<TransactionHistory props={transactions} />}
+      {<FriendList friends={friends} />};      
+      {<TransactionHistory props={transactions} />};
     </div>
   );
 };
