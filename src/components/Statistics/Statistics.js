@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { BlockStat } from 'components/BlockStat/BlockStat';
 import css from "components/Statistics/Statistics.module.css"
 
@@ -14,6 +14,6 @@ export const Statistics = ({ title, stats}) => {
         
 };
 
-// Statistics.propTypes = {
-//     title: PropTypes.string,
-// }
+Statistics.propTypes = {
+    title: PropTypes.string,
+}
