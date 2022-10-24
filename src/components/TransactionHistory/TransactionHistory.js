@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { TransactionItem } from "components/TransactionItem/TransactionItem";
 import css from "components/TransactionHistory/TransactionHistory.module.css"
 export const TransactionHistory = ({ props }) => {
@@ -16,3 +17,6 @@ export const TransactionHistory = ({ props }) => {
 </table>); 
 }
 
+TransactionHistory.propTypes = {
+  props: PropTypes.object.isRequired
+}
