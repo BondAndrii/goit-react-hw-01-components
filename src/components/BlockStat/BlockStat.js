@@ -21,4 +21,3 @@ BlockStat.propTypes = {
         percentage: PropTypes.number.isRequired,
     })
 }
-// оролиавымьипп

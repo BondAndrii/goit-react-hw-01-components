@@ -1,4 +1,5 @@
-import {Card, Personal, Data, DataBlock, Info, InfoData} from './Profile.styled'
+import PropTypes from 'prop-types';
+import { Card, Personal, Data, DataBlock, Info, InfoData } from './Profile.styled'
 
 export const Profile = ({ profile: { username, tag, location, avatar, stats: {followers, views, likes }  }}) => {
     return <Card>
@@ -29,3 +30,11 @@ export const Profile = ({ profile: { username, tag, location, avatar, stats: {fo
   </Data>
 </Card>
 };
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
+}
